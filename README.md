@@ -1,4 +1,4 @@
-![https://github.com/ChthonicAnn/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push]
+![](https://github.com/ChthonicAnn/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
 
 # Yamdb_final
 
