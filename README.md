@@ -1,7 +1,6 @@
 ![push](https://github.com/ChthonicAnn/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
 
 # Yamdb_final
-### test
 
 REST API for YaMDb service YaMDb is a database of reviews about films, books, music and other works. The YaMDb project collects user feedback on works. Works are divided into categories, for example: "Books", "Films", "Music". A work can be assigned to several genres. New categories and genres can only be created by the administrator. Readers leave reviews and ratings for works in the range from 1 to 10. Based on these data, an average rating is calculated.
 
