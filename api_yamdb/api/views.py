@@ -7,10 +7,10 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import (
     decorators, filters, permissions, response, status, viewsets
 )
+
 from reviews.models import (
     Category, Genre, Review, Title,
 )
-
 from core.viewsets import CLDViewSet, OnlyCreateViewSet
 from .filters import TitleFilter
 from .paginators import CustomPagination
@@ -18,9 +18,9 @@ from .permissions import (
     IsAdmin, IsAdminUserOrReadOnly, IsStaffOrAuthorOrReadOnly
 )
 from .serializers import (
-    ReviewSerializer, CommentSerializer, GenreSerializer,
-    CategorySerializer, SignUpSerializer, UserSerializer, TitleReadSerializer,
-    TitleWriteSerializer, JWTUserSerializer
+    CategorySerializer, CommentSerializer, GenreSerializer,
+    JWTUserSerializer, ReviewSerializer, SignUpSerializer,
+    UserSerializer, TitleReadSerializer, TitleWriteSerializer,
 )
 from .utils import send_confirmation_code
 

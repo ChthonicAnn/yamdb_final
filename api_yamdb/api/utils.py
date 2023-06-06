@@ -1,7 +1,6 @@
 from django.core import mail
 from api_yamdb.settings import EMAIL_HOST_USER
 
-
 def send_confirmation_code(to_email, confirmation_code, url):
     subject = 'Регистрация на YaMDB.'
     message = (
