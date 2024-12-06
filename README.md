@@ -1,12 +1,19 @@
 ![push](https://github.com/ChthonicAnn/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
 
-# Yamdb_final
+# Yamdb
 
-REST API for YaMDb service YaMDb is a database of reviews about films, books, music and other works. The YaMDb project collects user feedback on works. Works are divided into categories, for example: "Books", "Films", "Music". A work can be assigned to several genres. New categories and genres can only be created by the administrator. Readers leave reviews and ratings for works in the range from 1 to 10. Based on these data, an average rating is calculated.
+REST API для сервиса YaMDb
 
-Authentication by JWT token Supports GET, POST, PUT, PATCH, DELETE methods Provides data in JSON format Created in a team of three people using Git as part of the Yandex.Practice training course.
+YaMDb — это база данных отзывов на фильмы, книги, музыку и другие произведения. Проект собирает пользовательские отзывы о произведениях. Произведения разделены на категории, например: «Книги», «Фильмы», «Музыка». Каждое произведение может быть отнесено к нескольким жанрам. Новые категории и жанры может создавать только администратор. Пользователи оставляют отзывы и ставят оценки произведениям по шкале от 1 до 10, на основе которых рассчитывается средняя оценка.
 
-## Technology stack
+Особенности:
+
+- Аутентификация через JWT-токены
+- Поддержка методов GET, POST, PUT, PATCH, DELETE
+- Данные предоставляются в формате JSON
+- Создан в команде из трех человек с использованием Git в рамках курса от Яндекс.Практикума
+
+## Технологический стек
 
 - Django REST Framework (DRF)
 - Simple JWT library
@@ -14,42 +21,42 @@ Authentication by JWT token Supports GET, POST, PUT, PATCH, DELETE methods Provi
 - SQLite3 database
 - git version control system
 
-## Getting Started
+## Как начать работу
 
-These instructions will cover usage information and for the docker container 
+Инструкция для запуска проекта в Docker-контейнере.
 
-### Prerequisities
+### Предварительные требования
 
-In order to run this container you'll need docker installed.
+Для запуска контейнера потребуется установленный Docker:
 
 * [Windows](https://docs.docker.com/windows/started)
 * [OS X](https://docs.docker.com/mac/started/)
 * [Linux](https://docs.docker.com/linux/started/)
 
-### Usage
+### Использование
 
-1) Expand containers with the project:
+1) Запустите контейнеры с проектом:
 ```
 docker-compose up 
 ```
-2) Run the migrations:
+2) Выполните миграции:
 ```
 docker-compose exec web python manage.py migrate
 ```
-3) Create a superuser:
+3) Создайте суперпользователя:
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
-4) Collect all "statics" of the project
+4) Соберите статические файлы проекта:
 ```
 docker-compose exec web python manage.py collectstatic --no-input
 ```
-5) If necessary, you can upload test data:
+5) При необходимости загрузите тестовые данные:
 ```
 docker-compose exec web python manage.py filldatabase
 ```
 
-### env file template
+### Шаблон файла .env
 
 ```
 DB_ENGINE=<...> # indicate that we are working with postgresql
@@ -62,10 +69,9 @@ SECRET_KEY=<...> # key from settings.py
 ```
 
 __________________________________
-Your project started at http://127.0.0.1:8000/
-Full documentation available at http://127.0.0.1:8000/redoc/
+Ваш проект запущен по адресу: http://127.0.0.1:8000/
+Полная документация доступна по адресу: http://127.0.0.1:8000/redoc/
 
-## Authors
+## Авторы
 
-* **Anastasyya Yorina** - *Initial work* - [ChthonicAnn](https://github.com/ChthonicAnn)
-
+* **Анастасия Ёрина** - [ChthonicAnn](https://github.com/ChthonicAnn/)
